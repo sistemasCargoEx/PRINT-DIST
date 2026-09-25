@@ -2,13 +2,7 @@ name: Upload CargoEx Service to Google Cloud Storage
 run-name: Upload signed binary to GCS by ${{ github.actor }}
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      # Trigger when signed cargoex-service.exe is updated in dist/
-      - 'dist/*.exe'
-      - 'dist/cargoex-service.exe'
+  workflow_dispatch:
 
 jobs:
   upload-to-gcs:

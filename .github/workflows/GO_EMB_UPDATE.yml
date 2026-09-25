@@ -10,7 +10,7 @@ on:
       - 'emb/**'
 
 env:
-  REPO_OWNER: MatCargoEx
+  REPO_OWNER: sistemasCargoEx
   GO_SERVICE_REPO: PRINT-SERVICE-GO
 
 jobs:
