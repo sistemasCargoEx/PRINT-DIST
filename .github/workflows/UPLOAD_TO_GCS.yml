@@ -3,6 +3,13 @@ run-name: Upload signed binary to GCS by ${{ github.actor }}
 
 on:
   workflow_dispatch:
+  # Auto-publish disabled until APP_SIGNER exists on sistemasCargoEx (no signing cert / runner yet).
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'dist/*.exe'
+  #     - 'dist/cargoex-service.exe'
 
 jobs:
   upload-to-gcs:
