@@ -10,7 +10,7 @@ on:
       - 'emb/**'
 
 env:
-  REPO_OWNER: sistemasCargoEx
+  REPO_OWNER: ${{ github.repository_owner }}
   GO_SERVICE_REPO: PRINT-SERVICE-GO
 
 jobs:
